@@ -19,8 +19,12 @@ function WelcomeMessage(props) {
   return (
     <div className="p-4 m-2 border-2 border-slate-600 w-1/4">
       <h2 className="text-lg">Welcome Message</h2>
+
+      <p>Welcome, {props.name}!</p>
+
       <p className="text-teal-600">{`Welcome, ${props.name}!`}</p>
       <p>{`You are ${props.age} years old!`}</p>
+
     </div>
   );
 }
@@ -51,11 +55,16 @@ function PropsDemo() {
         <WelcomeMessage name="Emily" age="45"/>
 
       </div>
+
+      <div>
+        TODO: Add your own component here. Add instances of the component you created above here.
+
       <div className="flex">
         TODO: Add your own component here demonstrating the use of props.
         <ProductInfo name="Apple" price=".99" />
         <ProductInfo name="Eggs" price="5.99" />
         <ProductInfo name="Milk" price="4.99" />
+
       </div>
 
     </div>
@@ -84,6 +93,10 @@ function CoinFlip(props) {
 
 // TODO: Create your own component that uses the ternary operator
 // Example component: Weather
+
+// Use the ternary operator to display a message based on the props passed (e.g., "temperature" could determine weather the background is blue or red.)
+// You may make any component you like.
+
 // Use the ternary operator to display a message based on the props passed (e.g., "temperature").
 function SportsScore(props) {
   let winner = props.homeScore > props.awayScore ? 'Home Team' : 'Away Team';
@@ -97,7 +110,8 @@ function SportsScore(props) {
   )
 }
 
-function TertiaryDemo() {
+
+function TernaryDemo() {
   return (
     <div className="border-2 border-black rounded size-100">
       <h1 className="text-2xl">Ternary Operator</h1>
@@ -107,9 +121,13 @@ function TertiaryDemo() {
         <CoinFlip coinSide="tails" />
       </div>
       <div className="flex justify-around">
+
+        TODO: Add your own component here. Add instances of the component you created above here.
+
         {/* TODO: Add your own component here */}
         <SportsScore homeScore="45" awayScore="67" />
         <SportsScore homeScore="67" awayScore="45" />
+
       </div>
 
     </div>
@@ -162,8 +180,12 @@ function ArrayDestructureDemo() {
         <FruitStore />
       </div>
       <div>
+
+        TODO: Add your own component here. Add instances of the component you created above here.
+
         TODO: Add your own component here to demonstrate array destructuring.
         <PetShop />
+
       </div>
 
     </div>
@@ -176,7 +198,7 @@ function App() {
     <div>
       <PropsDemo />
       <hr class="border-blue-500 m-8"/>
-      <TertiaryDemo />
+      <TernaryDemo />
       <hr class="border-blue-500 m-8"/>
       <ArrayDestructureDemo />
     </div>

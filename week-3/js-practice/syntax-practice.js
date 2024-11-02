@@ -61,7 +61,11 @@ console.log("\nTask 2 Example: Array Destructuring (Cities)");
 console.log(`First City: ${city1}, Second City: ${city2}`);  // Expected output: "First City: New York, Second City: London"
 
 // TASK 2: Array Destructuring Exercise 1
+
+// Destructure an array of three animals and log the second and third animals.
+
 // TODO: Destructure an array of three animals and log the second and third animals.
+
 const animals = ["Lion", "Tiger", "Elephant"];
 
 // TODO: Use array destructuring to extract three animals into three variables
@@ -73,14 +77,19 @@ const [animal1, animal2, animal3] = animals;
 // console.log(`First Animal: ${firstAnimal} Second Animal: ${secondAnimal}, Third Animal: ${thirdAnimal}`);  // Expected output: "Second Animal: Tiger, Third Animal: Elephant"
 console.log(`First Animal: ${animal1}, Second Animal: ${animal2}, Third Animal: ${animal3}`);
 // TASK 2: Array Destructuring Exercise 2
-// TODO: Destructure an array of four numbers and log the sum of the first two numbers.
+// Destructure an array of four numbers and log the sum of the first two numbers.
 
 const numbers = [8, 12, 20, 30];
 // TODO: Use array destructuring to extract the first two numbers and calculate their sum
+
+
+
 const [firstNum, secondNum, thirdNum, fourthNum] = numbers;  // Uncomment this line and complete the TODO
 // const sum = firstNum + secondNum;
 const sum = secondNum + thirdNum;
+
 // Example usage
+// const sum = firstNum + secondNum;
 // console.log(`Sum: ${sum}`);  // Expected output: "Sum: 20"
 console.log(`Sum: ${sum}`);
 // Task 3: Get creative and use the ternary operator with your own example
